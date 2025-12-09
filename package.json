@@ -22,7 +22,9 @@
     "dotenv": "^16.4.5",
     "prism-react-renderer": "^2.3.0",
     "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react-dom": "^18.0.0",
+    "react-scroll": "^1.9.3",
+    "sass": "^1.95.0"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "3.5.2",

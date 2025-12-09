@@ -1,0 +1,38 @@
+.header {
+  padding-top: 50px;
+  padding-bottom: 30px;
+  padding-left: 110px;
+  padding-right: 106px;
+  background-color: #266ad9;
+  height: 109px;
+  display: flex;
+  justify-content: center;
+}
+
+.headerlink {
+  font-size: 24px;
+  font-weight: 600;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.headerlink:hover {
+  text-decoration: underline;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.headerDiv {
+  display: flex;
+  justify-content: space-between;
+  width: 657px;
+  height: 29px;
+}
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}

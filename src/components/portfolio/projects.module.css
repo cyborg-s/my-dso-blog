@@ -1,0 +1,23 @@
+.myProjects {
+  padding-top: 60px;
+  padding-bottom: 72px;
+  padding-left: 117px;
+  padding-right: 117px;
+  gap: 115px;
+  background-color: #266ad9;
+  color: #ffffff;
+  height: 669px;
+  display: flex;
+  justify-content: center;
+}
+
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+}
