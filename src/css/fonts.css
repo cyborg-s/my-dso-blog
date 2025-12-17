@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "Quicksand";
+  src: url("../assets/fonts/quicksand.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Globale Anwendung */
+html, body {
+  font-family: "Quicksand", sans-serif!important;
+}
+
+h2{
+    font-family: "Quicksand", sans-serif!important;
+}

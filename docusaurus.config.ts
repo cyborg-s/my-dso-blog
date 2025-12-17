@@ -9,15 +9,15 @@ dotenvconfig();
 const blogEnabled = Boolean(process.env.BLOG_ENABLED === 'true')
 
 const config: Config = {
-  title: 'DSO Live Demo Docs',
+  title: 'DSO Docs',
   tagline: 'Dinosaurs are cool',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: process.env.DEPLOYMENT_URL ?? "https://spmse.github.io",
+  url: process.env.DEPLOYMENT_URL ?? "https://cyborg-s.github.io",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: process.env.BASE_URL ?? "/",
+  baseUrl: process.env.BASE_URL ?? "/my-dso-blog",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -42,11 +42,11 @@ const config: Config = {
       'classic',
       {
         docs: {
-          sidebarPath: './sidebars.ts',
+          sidebarPath: require.resolve('./sidebars.ts'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/spmse/dev-blog-template',
+            'https://github.com/cyborg-s/my-dso-blog',
         },
         blog: blogEnabled ? 
           {
@@ -58,7 +58,7 @@ const config: Config = {
             // Please change this to your repo.
             // Remove this to remove the "edit this page" links.
             editUrl:
-              'https://github.com/spmse/dev-blog-template',
+              'https://github.com/cyborg-s/my-dso-blog',
             // Useful options to enforce blogging best practices
             onInlineTags: 'warn',
             onInlineAuthors: 'warn',
@@ -76,7 +76,7 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'My Site',
+      title: 'My Portfolio',
       logo: {
         alt: 'My Site Logo',
         src: 'img/logo.svg',
@@ -84,12 +84,12 @@ const config: Config = {
       items: [
         {
           type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          sidebarId: 'docs',
           position: 'left',
           label: 'Docs',
         },
         {
-          href: 'https://github.com/spmse/dev-blog-template',
+          href: 'https://github.com/cyborg-s/my-dso-blog',
           label: 'Github',
           position: 'right',
         },
@@ -98,15 +98,20 @@ const config: Config = {
     footer: {
       style: 'dark',
       links: [
+        
         {
-          title: 'Docs',
-          items: [
-            {
-              label: 'Tutorial',
-              to: '/docs/guides/intro',
-            },
-          ],
-        },
+        title: 'Legal Notice',
+        items: [
+          {
+            label: 'Privacy Police',
+            to: '/privacy', // Link zur Seite
+          },
+          {
+            label: 'Imprint',
+            to: '/imprint', // Link zur Seite
+          },
+        ],
+      },
         {
           title: 'Community',
           items: [

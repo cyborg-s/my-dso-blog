@@ -1,49 +1,36 @@
-import clsx from 'clsx';
-import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import Layout from '@theme/Layout';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
-import Heading from '@theme/Heading';
+import React from "react";
+import Head from "@docusaurus/Head";
+import { useMediaQuery } from "react-responsive";
+import Header from "../components/portfolio/header/Header";
+import HeaderMobil from "../components/portfolio/header/HeaderMobile";
+import About from "../components/portfolio/about-me/About";
+import AboutMobile from "../components/portfolio/about-me/AboutMobile";
+import Projects from "../components/portfolio/projects/Projects";
+import Skills from "../components/portfolio/skills/Skills";
+import Contact from "../components/portfolio/contact/Contact";
+import Footer from "../components/portfolio/footer/Footer";
+import SkillsMobile from "../components/portfolio/skills/SkillsMobile";
+import ProjectsMobile from "../components/portfolio/projects/ProjectsMobile";
+import ContactMobile from "../components/portfolio/contact/ContactMobile";
 
-import styles from './index.module.css';
+import "../css/fonts.css";
 
-function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
+const Home: React.FC = () => {
+  const isMobile = useMediaQuery({ maxWidth: 768 });
+
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <Heading as="h1" className="hero__title">
-          {siteConfig.title}
-        </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/guides/intro">
-            Docusaurus Tutorial - 5min ⏱️
-          </Link>
-          <></>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/projects/overview">
-            To my Projects
-          </Link>
-        </div>
-      </div>
-    </header>
+    <>
+      <Head>
+        <title>Sascha Nyßen Portfolio</title>
+      </Head>
+      {isMobile ? <HeaderMobil /> : <Header />}
+      {isMobile ? <AboutMobile /> : <About />}
+      {isMobile ? <SkillsMobile /> : <Skills />}
+      {isMobile ? <ProjectsMobile /> : <Projects />}
+      {isMobile ? <ContactMobile /> : <Contact />}
+      <Footer />
+    </>
   );
-}
+};
 
-export default function Home(): JSX.Element {
-  const {siteConfig} = useDocusaurusContext();
-  return (
-    <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
-      <HomepageHeader />
-      <main>
-        <HomepageFeatures />
-      </main>
-    </Layout>
-  );
-}
+export default Home;

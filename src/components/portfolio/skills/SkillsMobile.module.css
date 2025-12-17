@@ -1,0 +1,78 @@
+.skillsMobile {
+  padding: 40px 24px;
+}
+
+.slider {
+  overflow: hidden;
+}
+
+.track {
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+.slide {
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background-color: #266ad91a;
+  border-radius: 30px;
+  padding-block: 16px;
+}
+
+.skillRow {
+  display: flex;
+  gap: 16px;
+  padding-block: 8px;
+}
+
+.left {
+  width: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+}
+
+.name {
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.right {
+  flex: 1;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.dots {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: #738398;
+  transition: all 0.2s ease;
+}
+
+.active {
+  width: 18px;
+  height: 10px;
+  background: #ffffff;
+}
+
+.h2 {
+  font-size: 40px;
+}
