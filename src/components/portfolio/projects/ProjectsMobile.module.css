@@ -61,6 +61,7 @@
 .iconTitle {
   font-size: 14px;
   font-weight: 500;
+  color: #ffffff;
 }
 
 .projectIcon {
@@ -79,6 +80,7 @@
   font-size: 14px;
   line-height: 1.5;
   margin-bottom: 12px;
+  color: #ffffff;
 }
 
 .projectLinks {
@@ -114,6 +116,7 @@
   font-weight: 500;
   margin-top: 24px;
   margin-bottom: 12px;
+  color: #ffffff;
 }
 
 .seeMoreButton {
@@ -159,6 +162,7 @@
   background-color: #266ad9;
   margin-bottom: 0;
   padding-bottom: 16px;
+  color: #ffffff;
 }
 
 .center {

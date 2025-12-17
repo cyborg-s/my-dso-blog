@@ -1,17 +1,17 @@
 import React from "react";
 import Head from "@docusaurus/Head";
 import { useMediaQuery } from "react-responsive";
-import Header from "../components/portfolio/header/Header";
-import HeaderMobil from "../components/portfolio/header/HeaderMobile";
-import About from "../components/portfolio/about-me/About";
-import AboutMobile from "../components/portfolio/about-me/AboutMobile";
-import Projects from "../components/portfolio/projects/Projects";
-import Skills from "../components/portfolio/skills/Skills";
-import Contact from "../components/portfolio/contact/Contact";
-import Footer from "../components/portfolio/footer/Footer";
-import SkillsMobile from "../components/portfolio/skills/SkillsMobile";
-import ProjectsMobile from "../components/portfolio/projects/ProjectsMobile";
-import ContactMobile from "../components/portfolio/contact/ContactMobile";
+import Header from "../components/portfolio/header/Index";
+import HeaderMobil from "../components/portfolio/header/Mobile";
+import About from "../components/portfolio/about-me/Index";
+import AboutMobile from "../components/portfolio/about-me/Mobile";
+import Projects from "../components/portfolio/projects/Index";
+import Skills from "../components/portfolio/skills/Index";
+import Contact from "../components/portfolio/contact/Index";
+import Footer from "../components/portfolio/footer/Index";
+import SkillsMobile from "../components/portfolio/skills/Mobile";
+import ProjectsMobile from "../components/portfolio/projects/Mobile";
+import ContactMobile from "../components/portfolio/contact/Mobile";
 
 import "../css/fonts.css";
 

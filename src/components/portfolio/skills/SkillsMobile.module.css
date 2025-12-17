@@ -1,5 +1,6 @@
 .skillsMobile {
   padding: 40px 24px;
+  background-color: #262E34;
 }
 
 .slider {
@@ -44,12 +45,14 @@
   margin-top: 8px;
   font-size: 14px;
   font-weight: 600;
+  color: #ffffff;
 }
 
 .right {
   flex: 1;
   font-size: 14px;
   line-height: 1.5;
+  color: #ffffff;
 }
 
 .dots {
@@ -75,4 +78,5 @@
 
 .h2 {
   font-size: 40px;
+  color: #ffffff;
 }
