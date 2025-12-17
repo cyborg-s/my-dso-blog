@@ -1,12 +1,12 @@
 import React from "react";
 import Head from "@docusaurus/Head";
-import Header from "../components/portfolio/header/Header";
-import Contact from "../components/portfolio/contact/Contact";
-import Footer from "../components/portfolio/footer/Footer";
-import Imprint from "../components/portfolio/imprint/Imprint";
-import HeaderMobil from "../components/portfolio/header/HeaderMobile";
+import Header from "../components/portfolio/header/Index";
+import Contact from "../components/portfolio/contact/Index";
+import Footer from "../components/portfolio/footer/Index";
+import Imprint from "../components/portfolio/imprint/Index";
+import HeaderMobil from "../components/portfolio/header/Mobile";
 import { useMediaQuery } from "react-responsive";
-import ContactMobile from "../components/portfolio/contact/ContactMobile";
+import ContactMobile from "../components/portfolio/contact/Mobile";
 import "../css/fonts.css";
 
 const Home: React.FC = () => {
