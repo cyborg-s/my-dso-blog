@@ -143,11 +143,11 @@ This section gives brief and minimal instructions on how to use the setup. more 
 
 
 ### Files
-1. The [`Dockerfile`](/Dockerfile) describes how a single Docker image should be created. It serves as the basis for a service in the Docker Compose file.
+1. The `Dockerfile` describes how a single Docker image should be created. It serves as the basis for a service in the Docker Compose file.
 
-2. The [`compose.yml`](compose.yml) is responsible for managing and orchestrating the Minecraft Server container. It defines what configurations it should have.
+2. The `compose.yml` is responsible for managing and orchestrating the Minecraft Server container. It defines what configurations it should have.
 
-3. The [`server.properties`](server.properties.temp) file plays a central role in setting up a Minecraft Java server. It contains the configuration options that allow you to customize the behavior of the server, the game rules and the technical characteristics.
+3. The `server.properties` file plays a central role in setting up a Minecraft Java server. It contains the configuration options that allow you to customize the behavior of the server, the game rules and the technical characteristics.
  >[!NOTE]
  >* You can read about which properties can be changed [here](https://minecraft.wiki/w/Server.properties).
 

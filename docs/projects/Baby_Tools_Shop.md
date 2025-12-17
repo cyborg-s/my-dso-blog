@@ -179,4 +179,4 @@ baby-tools-shop/
 
 
 ##  License
-This project is licensed under the MIT License - see the [LICENSE](/baby-tools-shop/LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/cyborg-s/baby-tools-shop/blob/main/LICENSE) file for details.

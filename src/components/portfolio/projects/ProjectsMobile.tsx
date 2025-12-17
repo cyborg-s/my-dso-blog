@@ -15,14 +15,12 @@ const ProjectsMobile: React.FC = () => {
         <div className={styles.projectList}>
           {firstThreeProjects.map((project, index) => (
             <div key={project.id} className={styles.projectCard}>
-              {/* Nr + Titel */}
               <div className={styles.projectHeader}>
                 <span className={styles.projectId}>{project.id}.</span>
                 <span className={styles.projectTitle}>{project.title}</span>
               </div>
 
-              {/* Icons */}
-                            <div className={styles.iconsWrapper}>
+              <div className={styles.iconsWrapper}>
                 {project.icons?.map((iconObj, index) => (
                   <div key={index} className={styles.iconBox}>
                     {iconObj.isSvg ? (
@@ -39,7 +37,6 @@ const ProjectsMobile: React.FC = () => {
                 ))}
               </div>
 
-              {/* Projektbild */}
               {project.img && (
                 <img
                   src={project.img}
@@ -48,10 +45,8 @@ const ProjectsMobile: React.FC = () => {
                 />
               )}
 
-              {/* Beschreibung */}
               <p className={styles.description}>{project.description}</p>
 
-              {/* Links */}
               <div className={styles.projectLinks}>
                 <Link to={project.doc} className={styles.projectDoc}>
                   Documentation
@@ -69,11 +64,18 @@ const ProjectsMobile: React.FC = () => {
             </div>
           ))}
 
-          {/* See more projects */}
-          <p className={styles.moreText}>Further projects, <br/>such as Minecraft Server,<br/> WordPress,<br/> or containerization and deployment,<br/> can be found at :</p>
-          <div className={styles.center}><Link to="/docs/projects/overview" className={styles.seeMoreButton}>
-            <span>See more projects</span>
-          </Link></div>
+          <p className={styles.moreText}>
+            Further projects, <br />
+            such as Minecraft Server,
+            <br /> WordPress,
+            <br /> or containerization and deployment,
+            <br /> can be found at :
+          </p>
+          <div className={styles.center}>
+            <Link to="/docs/projects/overview" className={styles.seeMoreButton}>
+              <span>See more projects</span>
+            </Link>
+          </div>
         </div>
       </div>
     </section>
