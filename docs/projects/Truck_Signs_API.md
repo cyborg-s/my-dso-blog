@@ -1,3 +1,8 @@
+---
+title: Truck Signs API
+slug: /projects/truck-signs-api
+---
+
 # Truck Signs API
 
 ### A modern, containerized app that was developed with Django and can be deployed via Docker.

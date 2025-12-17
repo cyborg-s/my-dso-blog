@@ -1,0 +1,168 @@
+.container {
+  max-width: 100%;
+  background-color: #262e34;
+}
+
+.projectList {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.projectCard {
+  background: #266ad9;
+  padding: 24px;
+}
+
+.projectHeader {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.projectId {
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 36px;
+}
+
+.projectTitle {
+  font-weight: 600;
+  font-size: 36px;
+  color: #ffffff;
+}
+
+.iconsWrapper {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.iconBox {
+  height: 44px;
+  display: flex;
+  align-items: center;
+  padding: 6px;
+  background-color: #ffffff33;
+  border-radius: 10px;
+  gap: 4px;
+}
+
+.iconSvg {
+  height: 32px;
+  width: 32px;
+}
+
+.iconPng {
+  height: 32px;
+}
+
+.iconTitle {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.projectIcon {
+  width: 32px;
+  height: 32px;
+}
+
+.projectImg {
+  width: 100%;
+  height: auto;
+  border-radius: 30px;
+  margin-bottom: 12px;
+}
+
+.description {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.projectLinks {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
+  height: 47px;
+  font-size: 16px;
+}
+
+.projectGit {
+  background-color: #266ad9;
+  border: 1px solid #ffffff;
+  line-height: 120%;
+  border-radius: 30px;
+  width: 92px;
+  padding-inline: 20px;
+  padding-block: 14px;
+  color: #ffffff;
+  margin-left: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.projectGit:hover {
+  background-color: #ffffff10;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.moreText {
+  text-align: center;
+  font-weight: 500;
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+
+.seeMoreButton {
+  text-align: center;
+  background-color: #266ad9;
+  line-height: 120%;
+  border-radius: 30px;
+  width: 180px;
+  padding-inline: 20px;
+  padding-block: 14px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+
+.seeMoreButton:hover {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #5696ff;
+}
+
+.projectDoc {
+  background-color: #ffffff;
+  border-radius: 30px;
+  width: 158px;
+  padding-inline: 20px;
+  padding-block: 14px;
+  color: #266ad9;
+  line-height: 120%;
+  display: flex;
+  justify-content: center;
+}
+
+.projectDoc:hover {
+  background-color: #5696ff;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.h2 {
+  padding-inline: 16px;
+  font-size: 48px;
+  background-color: #266ad9;
+  margin-bottom: 0;
+  padding-bottom: 16px;
+}
+
+.center {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}

@@ -1,3 +1,9 @@
+---
+title: Owasp Juice Shop 
+slug: /projects/owasp-juice-shop
+---
+
+
 # OWASP Juice Shop Challange abgabe
 
 ## Table of Content

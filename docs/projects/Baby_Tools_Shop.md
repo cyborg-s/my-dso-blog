@@ -1,3 +1,8 @@
+---
+title: Baby Tools Shop
+slug: /projects/baby-tools-shop
+---
+
 # E-Commerce Project For Baby Tools
 
 This project implements a functional e-commerce application based on Django for the management and presentation of baby products. The following instructions describe in detail the steps for setting up, running and deploying the application with Docker.

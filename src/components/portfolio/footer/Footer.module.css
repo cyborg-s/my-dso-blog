@@ -1,8 +1,8 @@
 .footer {
   padding-top: 60px;
   padding-bottom: 72px;
-  padding-left: 117px;
-  padding-right: 117px;
+  padding-inline: 24px;
+  padding-inline: auto;
   gap: 115px;
   background-color: #262e34;
   color: #ffffff;
@@ -11,26 +11,26 @@
   justify-content: center;
 }
 
-
 .container {
   width: 100%;
-  max-width: 1440px;
+  max-width: 1176px;
 }
 
-.content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.upArrow{
-    height: 90px;
-    width: 40px;
-    border-radius: 20px;
+.upArrow {
+  height: 90px;
+  width: 40px;
+  border-radius: 20px;
+  margin-bottom: 40px;
 }
 
-.upArrow:hover{
-    background-color: rgba(255, 255, 255, 0.089);
+.upArrow:hover {
+  background-color: rgba(255, 255, 255, 0.089);
 }
 
 .footerLinks {

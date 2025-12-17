@@ -1,3 +1,9 @@
+---
+title: WordPress Multi Container Setup
+slug: /projects/wordpress-multi-container-setup
+---
+
+
 # WordPress_Multi_Container_Setup
 
 This repository serves as a guide for containerizing **WordPress** with **Docker Compose**.  

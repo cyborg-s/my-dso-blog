@@ -1,0 +1,131 @@
+.about {
+  padding-top: 60px;
+  padding-bottom: 72px;
+  padding-inline: 24px;
+  padding-inline: auto;
+  gap: 115px;
+  background-color: #266ad9;
+  color: #ffffff;
+  height: 635px;
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  padding-top: 50px;
+  padding-bottom: 30px;
+  padding-left: 110px;
+  padding-right: 106px;
+  background-color: #266ad9;
+  height: 109px;
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  font-family: "Quicksand", sans-serif !important;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  width: 664px;
+}
+
+.right {
+  height: clamp(300px, 33vw, 479px);
+  width: auto;
+  border-radius: 30px;
+  background-color: #1d4fa0ab;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profilePic {
+  height: clamp(300px, 33vw, 479px);
+  min-width: 240px;
+  width: auto;
+}
+
+h1 {
+  font-size: 88px;
+  font-weight: 700;
+}
+
+.preferences {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.description {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: 0%;
+}
+
+.aboutlink {
+  font-size: 20px;
+  font-weight: 600;
+  background-color: #ffffff;
+  color: #266ad9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  width: 151px;
+  height: 52px;
+  gap: 10px;
+  text-decoration: none;
+  padding-inline: 20px;
+  padding-block: 14px;
+}
+
+.aboutlink:hover {
+  text-decoration: none;
+  color: #266ad9;
+  background-color: #e6e6e6;
+  cursor: pointer;
+}
+
+.container {
+  width: 100%;
+  max-width: 1176px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 980px) {
+  h1 {
+    font-size: clamp(48px, calc(43px + 3vw), 72px);
+  }
+
+  .description {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    width: 320px;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+
+  .preferences {
+    font-size: 24px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  .about {
+    height: auto;
+  }
+}

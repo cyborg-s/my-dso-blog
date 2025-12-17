@@ -1,3 +1,8 @@
+---
+title: V-Server Setup
+slug: /projects/v-server-setup
+---
+
 # Ubuntu VM Setup with SSH & Nginx
 
 This guide outlines the basic configuration of an Ubuntu VM for secure SSH access using key-based authentication, as well as the installation and configuration of the Nginx web server. It also covers Git setup and linking an SSH key to GitHub.

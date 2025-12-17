@@ -1,3 +1,8 @@
+---
+title: Minecraft Server
+slug: /projects/minecraft-server
+---
+
 # Minecraft Server Container Setup
 
 This repository serves as a guide for containerizing a simple **Minecraft server: Java Edition** with **Docker Compose**.  

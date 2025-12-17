@@ -1,3 +1,8 @@
+---
+title: Conduit Containization
+slug: /projects/conduit-containization
+---
+
 # Conduit
 
 ## Contanization of a frontend and backend application

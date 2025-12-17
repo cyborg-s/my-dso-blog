@@ -1,0 +1,257 @@
+.myProjects {
+  padding-top: 60px;
+  padding-bottom: 72px;
+  padding-inline: 16px;
+  padding-inline: auto;
+  gap: 115px;
+  background-color: #266ad9;
+  color: #ffffff;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 1176px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper {
+  padding-top: 64px;
+  display: flex;
+  gap: 40px;
+}
+
+.projectList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 256px;
+}
+
+.projectButton {
+  background: #266ad9;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #ddd;
+  text-align: left;
+  display: flex;
+  gap: 6px;
+  font-size: 24px;
+  transform-origin: left;
+  transition: transform 0.15s ease;
+  display: flex;
+  align-items: center;
+}
+
+.projectButton:hover {
+  transform: scaleX(1.02);
+  color: #ffffff;
+}
+
+.projectButton.active {
+  color: #262e34;
+  text-decoration: underline;
+}
+
+.projectButton:hover .projectTitle {
+  text-decoration: underline;
+}
+
+.projectId {
+  text-decoration: none;
+}
+
+.projectTitle {
+  text-decoration: none;
+}
+
+.active {
+  background: #266ad9;
+  color: white;
+}
+
+.projectDetail {
+  width: 913px;
+  height: auto;
+  background: #2f4563;
+  padding: 30px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.detailsTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.iconsWrapper {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+.iconBox {
+  height: 44px;
+  display: flex;
+  align-items: center;
+  padding: 6px;
+  background-color: #ffffff;
+  color: #262e34;
+  border-radius: 10px;
+  gap: 4px;
+  max-width: 120px;
+}
+
+.iconSvg {
+  height: 32px;
+  width: 32px;
+}
+
+.iconPng {
+  height: 32px;
+}
+
+.iconTitle {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0;
+}
+
+h3 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.detailsBottom {
+  display: flex;
+  justify-content: space-between;
+  height: 240px;
+}
+
+.detailText {
+  width: 456px;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.projectImg {
+  width: 355px;
+  border-radius: 30px;
+  object-fit: cover;
+}
+
+.arrowIcon {
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
+}
+
+.moreButton {
+  text-decoration: underline;
+}
+
+.projectLinks {
+  color: #ffffff;
+  height: 52px;
+  font-size: 20px;
+  width: 100%;
+  justify-content: end;
+  display: flex;
+}
+
+.projectDoc {
+  background-color: #266ad9;
+  border-radius: 30px;
+  width: 188px;
+  padding-inline: 20px;
+  padding-block: 14px;
+  margin-left: 10px;
+  color: #ffffff;
+  line-height: 120%;
+}
+
+.projectDoc:hover {
+  background-color: #5696ff;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.description {
+  font-weight: 400;
+  line-height: 125%;
+  letter-spacing: 0%;
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+.projectGit {
+  background-color: #2f4563;
+  border: 1px solid #ffffff;
+  line-height: 120%;
+  border-radius: 30px;
+  width: 105px;
+  padding-inline: 20px;
+  padding-block: 14px;
+  color: #ffffff;
+  margin-left: 16px;
+}
+
+.projectGit:hover {
+  background-color: #ffffff10;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.h3 {
+  font-size: 40px;
+  width: 45%;
+}
+
+@media (max-width: 1100px) {
+  .projectImg {
+    width: 50%;
+  }
+
+  .projectButton {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 930px) {
+  .projectButton {
+    font-size: 18px;
+  }
+
+  .projectDoc {
+    font-size: 16px;
+    width: auto;
+    line-height: 140%;
+  }
+
+  .projectGit {
+    font-size: 16px;
+    width: auto;
+    line-height: 140%;
+  }
+
+  .h3 {
+    font-size: 36px;
+    width: 50%;
+  }
+}

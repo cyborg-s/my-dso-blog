@@ -1,3 +1,8 @@
+---
+title: Conduit Deploy
+slug: /projects/conduit-deploy
+---
+
 # Conduit
 
 ## Contanization of a frontend and backend application
