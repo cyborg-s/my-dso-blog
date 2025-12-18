@@ -2,13 +2,13 @@
   padding-top: 60px;
   padding-bottom: 72px;
   padding-inline: 24px;
-  padding-inline: auto;
   gap: 115px;
   background-color: #266ad9;
   color: #ffffff;
   height: 635px;
   display: flex;
   justify-content: center;
+  z-index: 4;
 }
 
 .header {
