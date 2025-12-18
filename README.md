@@ -1,18 +1,21 @@
-# My Developer Blog
+# My Docusaurus Portfolio
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+This repository contains a personal portfolio website built with [Docusaurus](https://docusaurus.io/), a static site generator for modern documentation and content-driven websites.
 
 ## Repository Description
 
-This repository hosts a developer blog built with Docusaurus. It includes tools and scripts for creating, managing, and deploying static web content. The software supports rapid local development, customizable theming, and seamless deployment to platforms like GitHub Pages or NGINX.
+The project provides a ready-to-use setup for creating and maintaining a portfolio with Docusaurus.  
+It includes configuration files, scripts, and tooling to support local development and deployment.  
+The website can be deployed easily to platforms such as GitHub Pages or served via NGINX.
 
 ## Table of Contents
 
-- [My Developer Blog](#my-developer-blog)
+- [My Docusaurus Portfolio](#my-docusaurus-portfolio)
   - [Repository Description](#repository-description)
   - [Table of Contents](#table-of-contents)
   - [Quickstart](#quickstart)
     - [Prerequisites](#prerequisites)
+    - [How to Start](#how-to-start)
   - [Repository Structure](#repository-structure)
   - [Deployment](#deployment)
     - [Deploy to Github Pages](#deploy-to-github-pages)
@@ -23,77 +26,86 @@ This repository hosts a developer blog built with Docusaurus. It includes tools 
 
 ### Prerequisites
 
-- [Node.js](https://nodejs.org/) (v16 or later recommended)
-- [pnpm](https://pnpm.io/) (package manager for faster and more efficient dependency handling)
-- [Docker](https://www.docker.com/products/docker-desktop) (only required if [deploying using NGINX](#deploying-using-nginx))
+Make sure the following tools are installed:
 
-1. Installation
+- [Node.js](https://nodejs.org/) (version 16 or newer)
+- [pnpm](https://pnpm.io/) (package manager)
+- [Docker](https://www.docker.com/products/docker-desktop) (only required for [NGINX deployment](#deploying-using-nginx))
+
+### How to Start
+
+1. Install dependencies
 
    ```
    $ pnpm install
    ```
 
-2. Local Development
+
+2. Start development server
 
    ```
    $ pnpm start
    ```
 
-   This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
-3. Build
+This starts a local development server. Changes are applied automatically.
+
+3. Build the project
 
    ```
    $ pnpm build
    ```
 
-   This command generates static content into the `build` directory and can be served using any static contents hosting service.
 
-4. Deployment
 
-   In order to deploy onto Github Pages, ensure that your `docusaurus.config.ts` conforms with the [documentation guidelines](https://docusaurus.io/docs/deployment#deploying-to-github-pages). After that is ensured run the following command to deploy:
+The static website is generated in the `build` directory.
 
-   ```
-   $ USE_SSH=true pnpm deploy
-   ```
+4. Deploy to GitHub Pages
+
+Make sure `docusaurus.config.ts` is configured correctly for GitHub Pages conforms with the [documentation guidelines](https://docusaurus.io/docs/deployment#deploying-to-github-pages).  
+Then run:
+
+   USE_SSH=true pnpm deploy
 
 For detailed information about deploying this Docusaurus project, refer to the [Deployment](#deployment) section below.
 
 ## Repository Structure
 
-The repository is organized as follows:
+The repository is structured as follows:
 
-- `blog/`: Contains markdown files for blog posts. Blog-related metadata is automatically picked up by the Docusaurus configuration.
-- `docs/`: Contains markdown files for documentation. These files are referenced in `sidebars.ts` to define the sidebar structure.
-- `src/`: Contains custom React components, CSS, and JavaScript for additional functionality or theming.
-- `static/`: Stores static assets (e.g., images, icons) served directly without processing.
-- `sidebars.ts`: Configures the structure of sidebars in the documentation section.
-- `docusaurus.config.ts`: Main configuration file for customizing and managing Docusaurus behavior.
-- `build/`: Generated after running the `pnpm build` command. Contains the static website files ready for deployment.
+- `blog/` – Blog posts written in Markdown
+- `docs/` – Documentation files used by Docusaurus
+- `src/` – Custom React components and styles
+- `static/` – Static assets such as images and icons
+- `sidebars.ts` – Sidebar configuration for the docs
+- `docusaurus.config.ts` – Main Docusaurus configuration
+- `build/` – Generated static site (created by `pnpm build`)
 
-New content can be added as follows:
+To add content:
 
-- Add new documentation files to the `docs/` folder.
-- Add new blog posts to the `blog/` folder. No additional configuration is required.
+- Add documentation files to `docs/`
+- Add blog posts to `blog/`
 
 ## Deployment
 
 ### Deploy to Github Pages
 
-To deploy using SSH:
+Using SSH:
 
-```
-$ USE_SSH=true pnpm deploy
-```
+   ```
+   $ USE_SSH=true pnpm deploy
+   ```
 
-To deploy without using SSH, run:
+
+Without SSH:
 
 ```
 $ GIT_USER=<Your GitHub username> pnpm deploy
 ```
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+
+This builds the site and pushes it to the `gh-pages` branch.
 
 ### Deploying using NGINX
 
-To deploy the site using NGINX and Docker, follow this [guide](./docs/guides/deploy-docusaurus-with-docker-and-nginx.md)
+To deploy the site with Docker and NGINX, follow this [guide](./docs/guides/deploy-docusaurus-with-docker-and-nginx.md).
