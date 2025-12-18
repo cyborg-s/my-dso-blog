@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
       <div className={styles.container}>
         <div className={styles.content}>
           <Link
-            to="header"
+            to="about"
             className={styles.upArrowLink}
             smooth={true}
             duration={500}

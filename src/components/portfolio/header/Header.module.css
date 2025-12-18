@@ -3,10 +3,15 @@
   padding-bottom: 30px;
   padding-inline: 24px;
   padding-inline: auto;
-  background-color: #266ad9;
+  background-color: #266bd9;
   height: 109px;
   display: flex;
   justify-content: center;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
 }
 
 .headerlink {
@@ -27,6 +32,7 @@
   justify-content: space-between;
   width: 657px;
   height: 29px;
+  z-index: 3;
 }
 
 .container {
