@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./About.module.css";
-import { Link } from "react-scroll";
+import Link from "@docusaurus/Link";
 import profilePic from "../../../assets/imgGroß.png";
 
 const About: React.FC = () => {
@@ -10,7 +10,7 @@ const About: React.FC = () => {
         <div className={styles.left}>
           <p className={styles.preferences}>Hey there, 👋 I am</p>
           <h1>Sascha Nyßen</h1>
-          <p className={styles.preferences}>DevSecOps Engeneer</p>
+          <p className={styles.preferences}>DevSecOps Engineer</p>
 
           <p className={styles.description}>
             Programming is my passion, combining creativity with logical
@@ -24,11 +24,7 @@ const About: React.FC = () => {
 
           <Link
             className={styles.aboutlink}
-            to="contact"
-            smooth={true}
-            duration={500}
-            spy={true}
-            offset={-50}
+            to="#contact"
           >
             Contact me
           </Link>

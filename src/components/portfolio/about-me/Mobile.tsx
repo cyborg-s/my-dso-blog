@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./About.module.css";
-import { Link } from "react-scroll";
+import Link from "@docusaurus/Link";
 import profilePic from "../../../assets/imgGroß.png";
 
 const AboutMobile: React.FC = () => {
@@ -25,10 +25,7 @@ const AboutMobile: React.FC = () => {
 
         <Link
           className={styles.aboutlink}
-          to="contact"
-          smooth={true}
-          duration={500}
-          offset={-50}
+          to="#contact"
         >
           Contact me
         </Link>
