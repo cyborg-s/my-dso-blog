@@ -235,6 +235,11 @@ h3 {
   .projectButton {
     font-size: 20px;
   }
+
+  .h3 {
+    font-size: 36px;
+    width: 50%;
+  }
 }
 
 @media (max-width: 930px) {
@@ -254,8 +259,14 @@ h3 {
     line-height: 140%;
   }
 
-  .h3 {
-    font-size: 36px;
-    width: 50%;
+
+  .h3{
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 830px){
+  .h3{
+    font-size: 28px;
   }
 }
