@@ -6,14 +6,6 @@ import truckSignsImg from "../../../assets/projects/truckSignImg.png";
 import babyToolsImg from "../../../assets/projects/babyToolsImg.png";
 import juiceShopImg from "../../../assets/projects/shellImg.png";
 import arrow from "../../../assets/arrow.png";
-import yamlIcon from "../../../assets/projects/icons/yamlSkill.png";
-import shellIcon from "../../../assets/projects/icons/shellSkill.png";
-import containerIcon from "../../../assets/projects/icons/containerSkill.png";
-import itSecIcon from "../../../assets/projects/icons/secSkill.png";
-import cssIcon from "../../../assets/projects/icons/cssSkill.png";
-import hmtlIcon from "../../../assets/projects/icons/htmlSkill.png";
-import pythonIcon from "../../../assets/projects/icons/pythonSkill.png";
-import staticIcon from "../../../assets/projects/icons/staticSkill.png";
 import Link from "@docusaurus/Link";
 import { projects } from "../data/ProjectsData";
 
@@ -34,7 +26,6 @@ const Projects: React.FC = () => {
         <h2>My project highlights</h2>
 
         <div className={styles.wrapper}>
-          {/* Linke Spalte – Liste */}
           <div className={styles.projectList}>
             {projects.map((project) => (
               <button

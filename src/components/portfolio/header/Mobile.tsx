@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-scroll";
+import Link from "@docusaurus/Link";
 import styles from "./Header.module.css";
 
 const HeaderMobil: React.FC = () => {
@@ -31,37 +31,25 @@ const HeaderMobil: React.FC = () => {
 
           <nav className={styles.menuLinksMobil}>
             <Link
-              to="about"
-              smooth
-              duration={500}
-              offset={-50}
+              to="#about"
               onClick={closeMenu}
             >
               About me
             </Link>
             <Link
-              to="skills"
-              smooth
-              duration={500}
-              offset={-50}
+              to="#skills"
               onClick={closeMenu}
             >
               My skills
             </Link>
             <Link
-              to="projects"
-              smooth
-              duration={500}
-              offset={-50}
+              to="#projects"
               onClick={closeMenu}
             >
               My projects
             </Link>
             <Link
-              to="contact"
-              smooth
-              duration={500}
-              offset={-50}
+              to="#contact"
               onClick={closeMenu}
             >
               Contact

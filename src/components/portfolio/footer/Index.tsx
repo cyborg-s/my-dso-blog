@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-scroll";
+import Link from "@docusaurus/Link";
 import styles from "./Footer.module.css";
 
 const Footer: React.FC = () => {
@@ -8,11 +8,9 @@ const Footer: React.FC = () => {
       <div className={styles.container}>
         <div className={styles.content}>
           <Link
-            to="about"
+            to="#about"
             className={styles.upArrowLink}
-            smooth={true}
-            duration={500}
-            offset={-50}
+
           >
             <img
               className={styles.upArrow}

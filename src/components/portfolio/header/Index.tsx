@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-scroll";
+import Link from "@docusaurus/Link";
 import styles from "./Header.module.css";
 
 const Header: React.FC = () => {
@@ -8,41 +8,29 @@ const Header: React.FC = () => {
       <div className={styles.container}>
         <div className={styles.headerDiv}>
           <Link
-            to="about"
+            to="#about"
             className={styles.headerlink}
-            smooth={true}
-            duration={500}
-            offset={-50}
           >
             About me
           </Link>
 
           <Link
-            to="skills"
+            to="#skills"
             className={styles.headerlink}
-            smooth={true}
-            duration={500}
-            offset={-50}
           >
             My skills
           </Link>
 
           <Link
-            to="projects"
+            to="#projects"
             className={styles.headerlink}
-            smooth={true}
-            duration={500}
-            offset={-50}
           >
             My projects
           </Link>
 
           <Link
-            to="contact"
+            to="#contact"
             className={styles.headerlink}
-            smooth={true}
-            duration={500}
-            offset={-50}
           >
             Contact
           </Link>

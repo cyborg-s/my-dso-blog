@@ -43,10 +43,6 @@
   gap: 24px;
 }
 
-.headerMobil {
-  display: none;
-}
-
 @media (max-width: 768px) {
   .headerMobil {
     height: 73px;
@@ -56,6 +52,7 @@
     align-items: center;
     position: relative;
     gap: 24px;
+    z-index: 5;
   }
 
   .containerMobil {
