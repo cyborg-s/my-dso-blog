@@ -40,7 +40,7 @@ const ContactMobile: React.FC = () => {
         <div className={styles.right}>
           <a
             className={styles.socialLinks}
-            href="mailto:nysascha1@gmail.com"
+            href="mailto:kontakt@sascha-nyssen.de"
             onMouseEnter={() => setMailHover(true)}
             onMouseLeave={() => setMailHover(false)}
           >
@@ -49,7 +49,7 @@ const ContactMobile: React.FC = () => {
               src={mailHover ? MailIconHover : MailIcon}
               alt="Email"
             />
-            nysascha1@gmail.com
+            kontakt@sascha-nyssen.de
           </a>
 
           <a
